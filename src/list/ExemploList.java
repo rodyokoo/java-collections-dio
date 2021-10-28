@@ -57,16 +57,21 @@ public class ExemploList {
             if(next < 8.5) iterator1.remove();
         }
         System.out.println(notas);
-        System.out.println("Apague toda a lista!");
+       /* System.out.println("Apague toda a lista!");
         notas.clear();
         System.out.println(notas);
-        System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
+        System.out.println("Confira se a lista está vazia: " + notas.isEmpty());*/
 
-        //utilizar o método LinedList
+        //utilizar o método LinkedList
         System.out.println("Crie uma lista chamada notas2 e coloque todos os elementos da list ArrayList nessa nova lista: ");
+        LinkedList<Double> notas2 = new LinkedList<>(notas);
+        System.out.println("notas2: "+ notas2);
+        System.out.println("notas: " + notas);
 
-        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: ");
+        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: " + notas2.peekFirst());
+        System.out.println(notas2);
 
-        System.out.println("Mostre a primeira nota da lista removendo-o: ");
+        System.out.println("Mostre a primeira nota da lista removendo-o: " + notas2.pollFirst());
+        System.out.println(notas2);
     }
 }
