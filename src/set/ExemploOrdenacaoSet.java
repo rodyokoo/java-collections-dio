@@ -116,7 +116,7 @@ public class ExemploOrdenacaoSet {
 
             int nome = s1.getNome().compareTo(s2.getNome());
             if(nome != 0) return nome;
-            
+
             return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
         }
     }
